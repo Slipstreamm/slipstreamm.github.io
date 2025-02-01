@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypto QR Codes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    /* Flex container to evenly space the items */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+    /* Style each QR code block */
+    figure {
+      margin: 0;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    /* Caption above the image */
+    figcaption {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+    /* QR code image style */
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border: 1px solid #ccc;
+      padding: 5px;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Crypto QR Codes</h1>
+  <div class="container">
+    <!-- Bitcoin QR Code -->
+    <figure>
+      <figcaption>
+        Blockchain: Bitcoin<br>
+        Address: 1BitcoinAddressExample
+      </figcaption>
+      <img src="path/to/bitcoin-qr.png" alt="Bitcoin QR Code">
+    </figure>
+
+    <!-- Ethereum QR Code -->
+    <figure>
+      <figcaption>
+        Blockchain: Ethereum<br>
+        Address: 0xEthereumAddressExample
+      </figcaption>
+      <img src="path/to/ethereum-qr.png" alt="Ethereum QR Code">
+    </figure>
+
+    <!-- Litecoin QR Code -->
+    <figure>
+      <figcaption>
+        Blockchain: Litecoin<br>
+        Address: LLitecoinAddressExample
+      </figcaption>
+      <img src="path/to/litecoin-qr.png" alt="Litecoin QR Code">
+    </figure>
+
+    <!-- Add more QR code blocks as needed -->
+  </div>
+</body>
+</html>
