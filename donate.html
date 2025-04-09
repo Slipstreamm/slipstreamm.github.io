@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --background-color: #f8f9fa;
+      --card-background: #ffffff;
+      --text-color: #333333;
+      --border-color: #e0e0e0;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .crypto-addresses {
+      margin-bottom: 2rem;
+    }
+    
+    .crypto-address {
+      background: var(--card-background);
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .blockchain-name {
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 5px;
+    }
+    
+    .address {
+      word-break: break-all;
+      font-family: monospace;
+      background-color: #f5f5f5;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    
+    .iframe-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Donate</h1>
+  </header>
+  
+  <div class="container">
+    <div class="iframe-container">
+      <iframe src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=8AKkBwMdzYf31PLZNnaF36K2SpYXD6kUaLaEEXSFH2MKjmDgtsoo8X33scbmqwQzZeJxFe5tj3E3kTmtXAJDKLz6TQaQhf1&donation=True&amount=0.0001&name=Slipstream&description=Donation+to+Slipstream&email=faxcluster20@protonmail.com&buttonbgcolor=2196f3&bgcolor=" width="310" height="350" style="border:0" scrolling="no"></iframe>
+    </div>
+    
+    <div class="crypto-addresses">
+      <div class="crypto-address">
+        <div class="blockchain-name">Bitcoin</div>
+        <div class="address">bc1q2hdtqu4pkp8r0dy528vq24lf6ppzmqfm0fzsfc</div>
+      </div>
+      
+      <div class="crypto-address">
+        <div class="blockchain-name">Ethereum</div>
+        <div class="address">0x47d5174323d5D7038E61A68da557BCF6D120BB82</div>
+      </div>
+      
+      <div class="crypto-address">
+        <div class="blockchain-name">Solana</div>
+        <div class="address">DMWUs9DM1RtyxcebvY4fcWEEZw5tHbBCuRme5BnxcuPN</div>
+      </div>
+      
+      <div class="crypto-address">
+        <div class="blockchain-name">Polygon</div>
+        <div class="address">0x47d5174323d5D7038E61A68da557BCF6D120BB82</div>
+      </div>
+      
+      <div class="crypto-address">
+        <div class="blockchain-name">Sui</div>
+        <div class="address">0x11a5ed4a1553b14efc31ac5e6d96ea14849f30435a52a24bd5c633e200b77477</div>
+      </div>
+      
+      <div class="crypto-address">
+        <div class="blockchain-name">Monero</div>
+        <div class="address">885FnNNukkB8xGAcRZoK6QhPCcRebnyQETCXPB17mua96aAj4mrWSYUTDd5fsvjNEZ839dQerLUrYGRTBaTZvgLuPfujzgA</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
