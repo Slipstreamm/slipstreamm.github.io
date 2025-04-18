@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypto QR Codes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --background-color: #f8f9fa;
+      --card-background: #ffffff;
+      --text-color: #333333;
+      --border-color: #e0e0e0;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    
+    .subtitle {
+      opacity: 0.8;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 20px;
+    }
+    
+    /* Flex container to evenly space the items */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    
+    /* Style each QR code block */
+    figure {
+      margin: 0;
+      padding: 20px;
+      background: var(--card-background);
+      border-radius: 12px;
+      text-align: center;
+      width: 240px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    figure:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    }
+    
+    /* Blockchain name style */
+    .blockchain-name {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    
+    /* Address style */
+    .address {
+      color: var(--text-color);
+      font-size: 0.8rem;
+      font-weight: normal;
+      line-height: 1.4;
+      word-break: break-all;
+      overflow-wrap: break-word;
+      opacity: 0.8;
+    }
+    
+    /* QR code image style */
+    img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      margin-top: 10px;
+    }  </style>
+</head>
+<body>
+  <header>
+    <h1>Crypto QR Codes</h1>
+    <div class="subtitle">Scan to send crypto to these addresses</div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <!-- Bitcoin QR Code -->
+      <figure>
+        <div class="blockchain-name">Bitcoin</div>
+        <div class="address">
+          bc1q2hdtqu4pkp8r0dy528vq24lf6ppzmqfm0fzsfc
+        </div>
+        <img src="img/bitcoin.png" alt="Bitcoin QR Code">
+      </figure>
+
+      <!-- Ethereum QR Code -->
+      <figure>
+        <div class="blockchain-name">Ethereum</div>
+        <div class="address">
+          0x47d5174323d5D7038E61A68da557BCF6D120BB82
+        </div>
+        <img src="img/ethereum.png" alt="Ethereum QR Code">
+      </figure>    <!-- Solana QR Code -->
+    <figure>
+      <div class="blockchain-name">Solana</div>
+      <div class="address">
+        DMWUs9DM1RtyxcebvY4fcWEEZw5tHbBCuRme5BnxcuPN
+      </div>
+      <img src="img/solana.png" alt="Solana QR Code">
+    </figure>
+
+    <!-- Polygon QR Code -->
+    <figure>
+      <div class="blockchain-name">Polygon</div>
+      <div class="address">
+        0x47d5174323d5D7038E61A68da557BCF6D120BB82
+      </div>
+      <img src="img/polygon.png" alt="Polygon QR Code">
+    </figure>
+    
+    <!-- Sui QR Code -->
+    <figure>
+      <div class="blockchain-name">Sui</div>
+      <div class="address">
+        0x11a5ed4a1553b14efc31ac5e6d96ea14849f30435a52a24bd5c633e200b77477
+      </div>
+      <img src="img/sui.png" alt="Sui QR Code">
+    </figure>
+    
+    <!-- Monero QR Code -->
+    <figure>
+      <div class="blockchain-name">Monero</div>
+      <div class="address">
+        885FnNNukkB8xGAcRZoK6QhPCcRebnyQETCXPB17mua96aAj4mrWSYUTDd5fsvjNEZ839dQerLUrYGRTBaTZvgLuPfujzgA
+      </div>
+      <img src="img/monero.png" alt="Monero QR Code">
+    </figure>
+
+    <!-- Add more QR code blocks as needed -->
+    </div>
+  </main>
+</body>
+</html>
