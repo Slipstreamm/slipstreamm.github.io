@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Slipstreamm</title>
-  <meta name="description" content="Full-stack developer, open-source contributor, and privacy advocate." />
+  <title>Slipstreamm - My Projects</title>
+  <meta name="description" content="A collection of fun websites and tools by Slipstreamm." />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    /* Using a common dark theme base */
     body {
-      font-family: system-ui, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
+      font-family: 'Inter', system-ui, sans-serif; /* Added Inter as primary font */
+      background-color: #1a202c; /* Darker background */
+      color: #e2e8f0; /* Lighter text for contrast */
       margin: 0;
       padding: 2rem;
       line-height: 1.6;
@@ -20,50 +22,163 @@
       margin-bottom: 3rem;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.5rem; /* 40px */
+      font-weight: 700;
       margin: 0.5rem 0;
+      color: #cbd5e0; /* Slightly lighter than main text for emphasis */
     }
-    a {
-      color: #00bcd4;
+    header p a {
+      color: #63b3ed; /* Tailwind's blue-400 */
       text-decoration: none;
+      margin: 0 0.5rem; /* Spacing for links */
     }
-    a:hover {
+    header p a:hover {
       text-decoration: underline;
+      color: #90cdf4; /* Tailwind's blue-300 */
     }
     .section {
-      max-width: 700px;
+      max-width: 800px; /* Increased max-width for better layout */
       margin: 0 auto 2rem;
+      padding: 1.5rem;
+      background-color: #2d3748; /* Card background, slightly lighter than body */
+      border-radius: 0.5rem; /* 8px */
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    h2 {
+      font-size: 1.875rem; /* 30px */
+      font-weight: 600;
+      color: #a0aec0; /* Medium gray for section titles */
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #4a5568; /* Separator line */
+      padding-bottom: 0.5rem;
+    }
+    .project-list {
+      list-style: none;
+      padding: 0;
     }
     .project-list li {
+      background-color: #4a5568; /* Slightly lighter card for list items */
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.375rem; /* 6px */
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .project-list li:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .project-list h3 {
+      font-size: 1.25rem; /* 20px */
+      font-weight: 600;
+      margin-top: 0;
       margin-bottom: 0.5rem;
     }
+    .project-list h3 a {
+      color: #81e6d9; /* Tailwind's teal-300 */
+      text-decoration: none;
+    }
+    .project-list h3 a:hover {
+      text-decoration: underline;
+      color: #a3f7eb; /* Lighter teal for hover */
+    }
+    .project-list p {
+      font-size: 0.95rem; /* Slightly smaller for description */
+      color: #cbd5e0; /* Lighter gray for readability */
+      margin-bottom: 0.25rem;
+    }
+    .project-link {
+        display: inline-block;
+        font-size: 0.875rem; /* 14px */
+        color: #63b3ed; /* Tailwind's blue-400 */
+        text-decoration: none;
+        margin-top: 0.5rem;
+        padding: 0.25rem 0.5rem;
+        border: 1px solid #63b3ed;
+        border-radius: 0.25rem; /* 4px */
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .project-link:hover {
+        background-color: #63b3ed;
+        color: #1a202c; /* Dark background color for text on hover */
+    }
+
     footer {
       text-align: center;
       margin-top: 4rem;
       font-size: 0.875rem;
-      color: #888;
+      color: #718096; /* Tailwind's gray-500 */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem; /* Adjust for smaller screens */
+      }
+      .section {
+        padding: 1rem;
+      }
+      .project-list h3 {
+        font-size: 1.125rem; /* 18px */
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Slipstream</h1>
-    <p><a href="https://github.com/Slipstreamm" target="_blank">GitHub</a> | <a href="mailto:faxcluster20@protonmail.com">Email</a></p>
+    <p>
+      <a href="https://github.com/Slipstreamm" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+      <a href="mailto:faxcluster20@protonmail.com">Email</a>
+    </p>
   </header>
 
   <div class="section">
-    <h2>About</h2>
-    <p>I build privacy-first, secure, and open-source software. I’m currently working on:</p>
+    <h2>My Fun Projects & Tools</h2>
     <ul class="project-list">
-           <li><strong><a href="https://openotp.lol">OpenOTP</a></strong> – Secure and minimal 2FA authenticator app built with Flutter.</li>
-      <li><strong>Cryo Wallet</a></strong> – Cross-platform crypto wallet with no tracking, no ads, and full self-custody. (Not yet public)</li>
+      <li>
+        <h3><a href="https://slipstreamm.dev/upload/" target="_blank" rel="noopener noreferrer">LiteDrop</a></h3>
+        <p>Temporary, private file upload service (up to 24 hours, max 1GB).</p>
+        <a href="https://slipstreamm.dev/upload/" target="_blank" rel="noopener noreferrer" class="project-link">Visit LiteDrop &rarr;</a>
+      </li>
+      <li>
+        <h3><a href="https://slipstreamm.dev/pastebin/" target="_blank" rel="noopener noreferrer">LiteDrop Pastes</a></h3>
+        <p>Pastebin service (max size 1MB, up to 24 hours).</p>
+        <a href="https://slipstreamm.dev/pastebin/" target="_blank" rel="noopener noreferrer" class="project-link">Visit LiteDrop Pastes &rarr;</a>
+      </li>
+      <li>
+        <h3><a href="https://slipstreamm.dev/teto-web" target="_blank" rel="noopener noreferrer">Teto Web</a></h3>
+        <p>Picks and displays a random image of Kasane Teto. Click the "random image" button!</p>
+        <a href="https://slipstreamm.dev/teto-web" target="_blank" rel="noopener noreferrer" class="project-link">See Random Teto &rarr;</a>
+      </li>
+      <li>
+        <h3><a href="https://slipstreamm.dev/teto" target="_blank" rel="noopener noreferrer">Teto Backend</a></h3>
+        <p>The backend for Teto Web. GET requests redirect (302) to a random image.</p>
+        <a href="https://slipstreamm.dev/teto" target="_blank" rel="noopener noreferrer" class="project-link">Access Teto Backend &rarr;</a>
+      </li>
+      <li>
+        <h3><a href="https://slipstreamm.dev/rockyou" target="_blank" rel="noopener noreferrer">RockYou Password Checker</a></h3>
+        <p>Checks if a password is in the RockYou.txt list. Supports GET and POST requests.</p>
+        <a href="https://slipstreamm.dev/rockyou" target="_blank" rel="noopener noreferrer" class="project-link">Check a Password &rarr;</a>
+      </li>
+      <li>
+        <h3><a href="https://slipstreamm.dev/agent" target="_blank" rel="noopener noreferrer">User Agent Checker</a></h3>
+        <p>Simply returns your browser's user agent in plaintext.</p>
+        <a href="https://slipstreamm.dev/agent" target="_blank" rel="noopener noreferrer" class="project-link">See Your User Agent &rarr;</a>
+      </li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>Contact</h2>
-    <p>Feel free to reach out or contribute to any of my open-source projects.</p>
-  </div>
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Slipstreamm. All rights reserved where applicable.</p>
+  </footer>
 
+  <script>
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
